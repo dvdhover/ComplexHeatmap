@@ -1,0 +1,242 @@
+CHANGES in VERSION 1.5.1
+
+* `oncoPrint`: there are default graphics if type of alterations is 
+  less than two.
+* `anno_*`: get rid of lazy loading
+
+=================================
+
+CHANGES in VERSION 1.4.4
+
+* NULL can be added to the heatmap list
+* give message if users mess up with row and column annotations
+* `oncoPrint`: columns are sorted by `memo sort` method to enhance
+  the mutual exclusivity.
+
+==================================
+
+CHANGES in VERSION 1.4.3
+
+* `anno_boxplot`: outliers can correctly plotted
+* add a new function `enhanced_basicplot`
+* fix a bug that order of annotation height is reversed
+
+===================================
+
+CHANGES in VERSION 1.4.2
+
+* order of annotations can be adjusted arbitrarily
+* anno_barplot: scales are adjusted according to the baseline
+
+===================================
+
+CHANGES in VERSION 1.4.1
+
+* revised the vignettes
+
+===================================
+
+CHANGES in VERSION 1.4.0
+
+* returned value for `draw` method has been changes
+* add `row_order`, `column_order`, `row_dend` and `column_dend`
+  to extract orders and dendrograms after heatmap clustering
+* add `select` function to interactively select sub region in the heatmap
+  and retrieve row/column index in the selected sub region.
+* renames all varialbes `*hclust*` to `*dend*`
+
+====================================
+
+CHANGES in VERSION 1.3.3
+
+* set `row_reorder` and `column_reorder` to FALSE by default in `Heatmap()`
+
+=====================================
+
+CHANGES in VERSION 1.3.2
+
+* fixed the error in the vignette header
+
+======================================
+
+CHANGES in VERSION 1.3.1
+
+* padding of whole plot are correctly set now
+
+=======================================
+
+CHANGES in VERSION 1.3.0
+
+* parameters for legend are specified by a list
+* vignette was split into several vignettes which focus on specific topics
+* ColorMapping class suppoorts `at` and `labels`
+* add `row_anno_*` and `column_anno_*` functions
+* `anno_barplot` add `baseline` option to define the baseline of bars
+* change default colors for matrix
+* allow heatmap with zero-row
+* heatmap components can all have absolute units
+* add `oncoPriint()`
+
+=========================================
+
+CHANGES in VERSION 1.2.8
+
+* add decorate* functions
+
+=========================================
+
+CHANGES in VERSION 1.2.7
+
+* add `rows_reorder_weight` and `columns_reorder_weight` in `Heatmap()`
+* `draw,HeatmapList-method` returns a list of orders
+* clustering is stored as dendrogram internally
+
+=========================================
+
+CHANGES in VERSION 1.2.6
+
+* graphical parameters for row names can be set as same length
+  as row slices
+* graphical parameters for annotation functions are consistent with
+  the matrix now
+* insert `k = NULL` into anno_function if they are row annotations
+* add a new vignette "quick examples"
+* change style for continuous legend color bar
+* label order of discrete legend has been adjusted (now it is from top to bottom)
+
+=========================================
+
+CHANGES in VERSION 1.2.5
+
+* add dependency of base packages
+
+=========================================
+
+CHANGES in VERSION 1.2.4
+
+* name for ColorMapping object has default value now. 
+* legend for continuous values can be set as continuous legends
+* row title and column title as well as legend title support expression
+* add `heatmap_legend_title` in `Heatmap` and `ColorMapping`
+* fixed a bug in `plotDataFrame`
+
+==========================================
+
+CHANGES in VERSION 1.2.3
+
+* `color_mapping_legend` can produce a continuous color legend
+* `color_mapping_legend` now returns a grob object
+
+===========================================
+
+CHANGES in VERSION 1.2.2
+
+* adjust positions for row titles
+* rows can be split if `cluster_rows` are a clustering object
+* `row_order` and `column_order` can be set by dimension names
+
+===========================================
+
+CHANGES in VERSION 1.2.1
+
+* adjust orders of row slices
+* support text rotation for heatmap titles 
+
+===========================================
+
+CHANGES in VERSION 1.2.0
+
+* correct row orders if km and row_order is set in `Heatmap`
+
+===========================================
+
+CHANGES in VERSION 1.1.9
+
+* adjust names and size of each component
+* add `densityHeatmap` function which visualizes column distribution
+  in a matrix
+* add `plotDataFrame` function which provides a quick way to 
+  visualize a data frame
+
+============================================
+
+CHANGES in VERSION 1.1.8
+
+* dendrograms are implemented by `grid.segments` 
+* setting padding for each component
+* adjust gaps between heatmaps/row annotations if the column of the 
+  heatmap is zero.
+
+============================================
+
+
+CHANGES IN VERSION 1.1.7
+
+* check consistency of matrix row names
+
+=============================================
+
+CHANGES IN VERSION 1.1.6
+
+* improved generation of random colors
+* order of heatmap annotation legends are same as the order of annotations
+* support NA value in simple annotations
+* add examples in the vignette
+* simple row annotations now have the correct order
+* `col` can be a vector of colors if matrix is continuous
+* simple annotation can be logical
+
+==============================================
+
+CHANGES IN VERSION 1.1.5
+
+* add gaps between heatmap components
+
+===============================================
+
+CHANGES IN VERSION 1.1.4
+
+* support color mapping for NA values
+
+===============================================
+
+CHANGES IN VERSION 1.1.3
+
+* Improved vignette to describe how to use row index in row annotation function
+  if row annotations are also splitted by rows.
+
+===============================================
+
+CHANGES IN VERSION 1.1.2
+
+* `anno_density`: graphics are now in correct order
+* add `anno_text`
+* add new examples corresponding to new functions
+
+================================================
+
+CHANGES IN VERSION 1.1.1
+
+* fixed a bug when setting `cluster_rows` to FALSE but still cluster
+  on rows.
+* add `rowAnnotation` and `columnAnnotation` functions
+* add examples in the vignette
+* No error if the heatmap list only contains zero-column matrix
+
+=================================================
+
+CHANGES IN VERSION 0.99.2
+
+* add two examples in vignette
+* add chunk labels in the vignette
+
+=================================================
+
+CHANGES IN VERSION 0.99.1
+
+* x and y in `cell_fun` are now `unit` objects.
+
+=================================================
+CHANGES IN VERSION 0.99.0
+
+* First release

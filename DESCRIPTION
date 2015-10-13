@@ -1,0 +1,23 @@
+Package: ComplexHeatmap
+Type: Package
+Title: Making Complex Heatmaps
+Version: 1.6.0
+Date: 2015-10-10
+Author: Zuguang Gu
+Maintainer: Zuguang Gu <z.gu@dkfz.de>
+Depends: R (>= 3.1.2), grid, graphics, stats, grDevices
+Imports: methods, circlize (>= 0.3.1), GetoptLong, colorspace,
+    RColorBrewer, dendextend (>= 1.0.1), GlobalOptions (>= 0.0.6)
+Suggests: testthat (>= 0.3), knitr, markdown, cluster, MASS, pvclust, 
+    dendsort, HilbertCurve
+VignetteBuilder: knitr
+Description: Complex heatmaps are efficient to visualize associations 
+    between different sources of data sets and reveal potential structures. 
+    Here the ComplexHeatmap package provides a highly flexible way to arrange 
+    multiple heatmaps and supports self-defined annotation graphics.
+biocViews: Software, Visualization, Sequencing
+URL: https://github.com/jokergoo/ComplexHeatmap
+License: GPL (>= 2)
+Packaged: 2015-10-10 00:00:00 UTC; Administrator
+Repository: Bioconductor
+Date/Publication: 2015-10-10 00:00:00
