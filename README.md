@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/jokergoo/ComplexHeatmap.svg)](https://travis-ci.org/jokergoo/ComplexHeatmap)
-
-Make Complex Heatmaps
+ake Complex Heatmaps
 =========================
 
 Complex heatmaps are efficient to visualize associations between different sources of data sets and reveal potential features. Here the ComplexHeatmap package provides a highly flexible way to arrange multiple heatmaps and supports self-defined annotation graphics.
